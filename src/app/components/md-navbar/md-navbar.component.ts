@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-md-navbar',
+  templateUrl: './md-navbar.component.html',
+  styleUrls: ['./md-navbar.component.css']
+})
+export class MdNavbarComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
