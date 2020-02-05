@@ -17,12 +17,18 @@ import { MdNavbarComponent } from './components/md-navbar/md-navbar.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 //Step1: For MDB Angular Free
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+import { AgmComponent } from './components/agm/agm.component';
+
+//AGM
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    MdNavbarComponent
+    MdNavbarComponent,
+    AgmComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,8 @@ import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
     NavbarModule, //Step3:adding Modules here
     WavesModule, 
     ButtonsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AgmCoreModule.forRoot({ apiKey: 'AIzaSyDzAxODzH8IAlvu2LDYAfrwqLk8BpsXeAE' })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,25 @@
+<h1 class="text-center">Angular Google Map</h1>
+<div class="container">
+<ul style="list-style:disc;">
+    <li><a href="https://angular-maps.com/">Official  Link</a></li>
+    <li><a href="https://www.youtube.com/watch?v=lApggVS0icc">Tutorial</a></li>
+</ul>
+
+<ul style="list-style:decimal;">
+    <li>Install package: npm install @agm/core --save</li>
+    <li>To use on your app get api key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">Link</a></li>
+    <li>import {{ "{ AgmCoreModule }" }} from '@agm/core';
+    </li>
+    <li>{{ "
+        imports: [
+          AgmCoreModule.forRoot({
+            apiKey: '#AIzaSyDzAxODzH8IAlvu2LDYAfrwqLk8BpsXeAE$'
+          })
+        ]"}}</li>
+
+     <li> Set the latitude/ lat=51.678418 and longitude/ lng=7.809007 in ts file </li>
+     <li>{{"<"+"agm-map [latitude]='lat' [longitude]='lng' style='height: 400px;'"+">"}}</li>
+</ul>
+
+<agm-map [latitude]="lat" [longitude]="lng" style="height: 400px;"></agm-map>
+</div>
